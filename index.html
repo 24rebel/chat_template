@@ -1854,8 +1854,8 @@
     
                         <!-- start chat conversation -->
                         <div class="chat-conversation p-3 p-lg-4" data-simplebar="init">
-                            <ul class="list-unstyled mb-0">
-                                <li id="messages_area">
+                            <ul id="messages_area" class="list-unstyled mb-0">
+                                <li>
                                     <div class="conversation-list">
                                         <div class="chat-avatar">
                                             <img src="assets/images/users/avatar-4.jpg" alt="">
@@ -2544,7 +2544,8 @@
         <!-- end  layout wrapper -->
 
         <script>
-            messages_area.scrollTop = messages_area.scrollHeight
+            var messagesArea = document.querySelector('#messages_area');
+            messagesArea.scrollTop = messagesArea.scrollHeight
         </script>
 
         <!-- JAVASCRIPT -->
